@@ -12,20 +12,20 @@ class CV:
         self.htmlTemplate = fetchFile(template)
         self.style = fetchFile(style)
 
-def main():
-    #initialize flask app
-    app = Flask(__name__)
 
-    #initialize CV
-    #override defaults: cv = CV(template="*yourtemplate.html*", style="*yourstyle.css*")
-    #cv = CV()
+#initialize flask app
+app = Flask(__name__)
 
-    cv = "<h1>One moment, please...</h1>"
+#initialize CV
+#override defaults: cv = CV(template="*yourtemplate.html*", style="*yourstyle.css*")
+#cv = CV()
 
-    #respond all queries with CV page
-    @app.route("/")
-    def hello():
-        return cv
+cv = "<h1>One moment, please...</h1>"
+
+#respond all queries with CV page
+@app.route("/")
+def hello():
+    return cv
 
 def fetchFile(filen: str) -> str:
     try:
@@ -36,4 +36,5 @@ def fetchFile(filen: str) -> str:
 
 # run blocks of code only if our program is the main program executed
 if __name__ == "__main__":
-    main()
+    #run flask app
+    app.run()
