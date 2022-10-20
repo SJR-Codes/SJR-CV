@@ -17,6 +17,5 @@ htmlHead = {
     "*SUBTITLE*": "Python Developer (Student)",
     "*LOCATION*": "Helsinki, Finland",
     "*DATE*": "20.10.2022",
-    "*PIC*": "img/naama.png",
-    "*CONT*": ""
+    "*PIC*": "img/naama.png"
 }
