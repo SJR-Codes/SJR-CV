@@ -11,3 +11,12 @@ htmlSettings = {
     "*DESC*": "Tiny CV app made with Python and served with Flask",
     "*AUTH*": "samu.reinikainen@gmail.com"
 }
+
+htmlHead = {
+    "*TITLE*": "Samu Reinikainen CV",
+    "*SUBTITLE*": "Python Developer (Student)",
+    "*LOCATION*": "Helsinki, Finland",
+    "*DATE*": "20.10.2022",
+    "*PIC*": "img/naama.png",
+    "*CONT*": ""
+}
