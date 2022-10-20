@@ -20,7 +20,7 @@ app = Flask(__name__)
 #override defaults: cv = CV(template="*yourtemplate.html*", style="*yourstyle.css*")
 #cv = CV()
 
-cv = "<h1>One moment, please...</h1>"
+cv = "<h1>Dos momentos, por favor...</h1>"
 
 #respond all queries with CV page
 @app.route("/")
