@@ -31,6 +31,25 @@ def fetchPic(filen: str) -> str:
     try:
         with open(filen, 'rb') as bf:
             bfdata = bf.read()
-            return b64.b64encode(bfdata)
+            return b64.b64encode(bfdata).decode('utf-8')
     except FileNotFoundError:
         exit(f"Error: script {filen} not found")
+
+def setPlaceHolders(html: str, settings: dict) -> str:
+    """
+    Replace html template placeholders with values from settings.
+    :param html: template with placeholders
+    :type html: str
+    :return: html
+    :rtype: str
+    """
+    html = fetchFile("tmpl/head.html")
+
+    for key, val in settings.items():
+        if key != "*PIC*":
+            html = html.replace(key, val)
+        else:
+            pic = fetchPic(val)
+            html = html.replace(key, pic)
+
+    return html

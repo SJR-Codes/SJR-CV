@@ -15,8 +15,11 @@ app = Flask(__name__)
 #initialize CV
 #override defaults: cv = CV(template="*yourtemplate.html*", style="*yourstyle.css*")
 cv = CV()
-cv.setHtmlSettings(sets.htmlSettings)
-cv.addBody("<h1>CV 20.10.2022</h1>")
+cv.setBaseHtmlSettings(sets.htmlSettings)
+
+headHtml = f.setPlaceHolders("tmpl/head.html", sets.htmlHead)
+
+cv.addBody(headHtml)
 
 #respond all queries with CV page
 @app.route("/")
