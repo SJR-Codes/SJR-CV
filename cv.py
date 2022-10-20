@@ -1,7 +1,7 @@
 """
 * SJR-CV 20.10.2022
 * cv.py
-* CV
+* CV class
 * Created by Samu Reinikainen
 """
 import funcs as f
@@ -13,7 +13,7 @@ class CV:
         #set inline styles to template
         self.html = self.html.replace("*STYLE*", self.style)
         
-    def setHtmlSettings(self, settings: dict) -> None:
+    def setBaseHtmlSettings(self, settings: dict) -> None:
         """
         Set htmlSettings values to html placeholders.
         :param html: html source as string
