@@ -7,22 +7,21 @@
 from flask import Flask
 import settings as sets
 import funcs as f
-import cv
-
+from cv import CV
 
 #initialize flask app
 app = Flask(__name__)
 
 #initialize CV
 #override defaults: cv = CV(template="*yourtemplate.html*", style="*yourstyle.css*")
-mycv = cv.CV()
-mycv.setHtmlSettings(sets.htmlSettings)
-mycv.addBody("<h1>CV 20.10.2022</h1>")
+cv = CV()
+cv.setHtmlSettings(sets.htmlSettings)
+cv.addBody("<h1>CV 20.10.2022</h1>")
 
 #respond all queries with CV page
 @app.route("/")
 def hello():
-    return str(mycv)
+    return str(cv)
 
 
 # run blocks of code only if our program is the main program executed
