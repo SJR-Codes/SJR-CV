@@ -4,6 +4,7 @@
 * CV
 * Created by Samu Reinikainen
 """
+import funcs as f
 
 class CV:
     def __init__(self, template = "template.html", style="style.css"):
