@@ -25,20 +25,9 @@ htmlAbout = {
     "*CONTENT*": "+15 years experience in ICT & software development.<br/>Entrepreneur, freelancer, employee. ERP, invoicing, HR management, Web, Warehouse management.<br/>Enthusiastically learning Python and looking for job."
 }
 
-htmlMain = {
-    "Experience": {
-        "Template": "para.html",
-        "Content": {
-            "*CONTENT*": {
-                "2022": "+15 years experience in ICT & software development.<br/>"
-            }
-        }
-    },
-    "Skills": {
-        "Template": "para.html",
-        "Content": {
-            "*CONTENT*": "+15 years experience in ICT & software development."
-        }
-    }
-
+htmlExperience = {
+    "*TITLE*": "Experience",
+    "Content": [
+        {"*YEAR*": "2022","*JOBTITLE*": "Developer", "*DESC*": "Lorem ipsum sic dolores amet..."}
+    ]
 }
