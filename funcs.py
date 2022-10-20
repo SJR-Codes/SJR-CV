@@ -35,15 +35,15 @@ def fetchPic(filen: str) -> str:
     except FileNotFoundError:
         exit(f"Error: script {filen} not found")
 
-def setPlaceHolders(html: str, settings: dict) -> str:
+def setPlaceHolders(filen: str, settings: dict) -> str:
     """
     Replace html template placeholders with values from settings.
-    :param html: template with placeholders
+    :param filen: template with placeholders
     :type html: str
     :return: html
     :rtype: str
     """
-    html = fetchFile("tmpl/head.html")
+    html = fetchFile(filen)
 
     for key, val in settings.items():
         if key != "*PIC*":
