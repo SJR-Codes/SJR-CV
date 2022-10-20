@@ -22,7 +22,7 @@ htmlHead = {
 
 htmlAbout = {
     "*TITLE*": "About Me",
-    "*CONTENT*": "+15 years experience in ICT & software development."
+    "*CONTENT*": "+15 years experience in ICT & software development.<br/>Entrepreneur, freelancer, employee. ERP, invoicing, HR management, Web, Warehouse management.<br/>Enthusiastically learning Python and looking for job."
 }
 
 htmlMain = {
@@ -30,7 +30,7 @@ htmlMain = {
         "Template": "para.html",
         "Content": {
             "*CONTENT*": {
-                "2022": "+15 years experience in ICT & software development."
+                "2022": "+15 years experience in ICT & software development.<br/>"
             }
         }
     },
