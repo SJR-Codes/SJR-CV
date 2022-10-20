@@ -8,8 +8,8 @@ import funcs as f
 
 class CV:
     def __init__(self, template = "template.html", style="style.css"):
-        self.html = f.fetchFile(template)
-        self.style = f.fetchFile(style)
+        self.html = f.fetchFile("tmpl/" + template)
+        self.style = f.fetchFile("tmpl/" + style)
         #set inline styles to template
         self.html = self.html.replace("*STYLE*", self.style)
         
