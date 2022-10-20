@@ -19,3 +19,26 @@ htmlHead = {
     "*DATE*": "20.10.2022",
     "*PIC*": "img/naama.png"
 }
+
+htmlAbout = {
+    "*TITLE*": "About Me",
+    "*CONTENT*": "+15 years experience in ICT & software development."
+}
+
+htmlMain = {
+    "Experience": {
+        "Template": "para.html",
+        "Content": {
+            "*CONTENT*": {
+                "2022": "+15 years experience in ICT & software development."
+            }
+        }
+    },
+    "Skills": {
+        "Template": "para.html",
+        "Content": {
+            "*CONTENT*": "+15 years experience in ICT & software development."
+        }
+    }
+
+}

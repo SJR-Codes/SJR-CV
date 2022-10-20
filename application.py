@@ -19,7 +19,9 @@ cv.setBaseHtmlSettings(sets.htmlSettings)
 
 headHtml = f.setPlaceHolders("tmpl/head.html", sets.htmlHead)
 
-cv.addBody(headHtml)
+aboutHtml = f.setPlaceHolders("tmpl/about.html", sets.htmlAbout)
+
+cv.addBody(headHtml+aboutHtml)
 
 #respond all queries with CV page
 @app.route("/")
