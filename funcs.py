@@ -17,4 +17,4 @@ def fetchFile(filen: str) -> str:
         with open(filen, "r") as file:
             return file.read()
     except FileNotFoundError:
-        exit("Error: script file not found")
+        exit(f"Error: script {filen} not found")
