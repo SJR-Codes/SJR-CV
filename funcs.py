@@ -70,4 +70,4 @@ def loopSetPH(html: str, block: str, settings: dict) -> str:
     block = block.replace("*TITLE*", settings.get("*TITLE*"))
     block = block.replace("*CONTENT*", content)
 
-
+    return block
