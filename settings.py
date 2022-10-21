@@ -28,6 +28,7 @@ htmlAbout = {
 htmlExperience = {
     "*TITLE*": "Experience",
     "Content": [
-        {"*YEAR*": "2022","*JOBTITLE*": "Developer", "*DESC*": "Lorem ipsum sic dolores amet..."}
+        {"*YEAR*": "2022", "*EMPOYER*": "not yet", "*JOBTITLE*": "Developer", "*DESC*": "Lorem ipsum sic dolores amet..."},
+        {"*YEAR*": "2021", "*EMPOYER*": "Stadin Safka", "*JOBTITLE*": "Waste food handler", "*DESC*": "Lorem ipsum sic dolores amet..."},
     ]
 }
