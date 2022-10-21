@@ -35,7 +35,7 @@ def fetchPic(filen: str) -> str:
     except FileNotFoundError:
         exit(f"Error: script {filen} not found")
 
-def setPlaceHolders(filen: str, settings: dict) -> str:
+def setPlaceHolders(html: str, settings: dict) -> str:
     """
     Replace html template placeholders with values from settings.
     :param filen: template with placeholders
@@ -43,8 +43,7 @@ def setPlaceHolders(filen: str, settings: dict) -> str:
     :return: html
     :rtype: str
     """
-    html = fetchFile(filen)
-
+    
     for key, val in settings.items():
         if key != "*PIC*":
             html = html.replace(key, val)
@@ -53,3 +52,22 @@ def setPlaceHolders(filen: str, settings: dict) -> str:
             html = html.replace(key, pic)
 
     return html
+
+def loopSetPH(html: str, block: str, settings: dict) -> str:
+    """
+    Replace html template placeholders with values from settings.
+    :param filen: template with placeholders
+    :type html: str
+    :return: html
+    :rtype: str
+    """
+    
+    content = ""
+
+    for para in settings.get("Content"):
+        content += setPlaceHolders(html, para)
+    
+    block = block.replace("*TITLE*", settings.get("*TITLE*"))
+    block = block.replace("*CONTENT*", content)
+
+

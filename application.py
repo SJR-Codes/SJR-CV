@@ -19,7 +19,12 @@ cv.setBaseHtmlSettings(sets.htmlSettings)
 
 headHtml = f.setPlaceHolders("tmpl/head.html", sets.htmlHead)
 
-aboutHtml = f.setPlaceHolders("tmpl/about.html", sets.htmlAbout)
+html = fetchFile("tmpl/about.html")
+aboutHtml = f.setPlaceHolders(html, sets.htmlAbout)
+
+html = fetchFile("tmpl/experience.html")
+block = fetchFile("tmpl/block.html")
+experienceHtml = f.loopSetPH(html, block, sets.htmlExperience)
 
 cv.addBody(headHtml+aboutHtml)
 
