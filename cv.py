@@ -8,13 +8,12 @@ import funcs as f
 from settings import Sets
 
 class CV:
-    def __init__(self, template = "template.html", style="style.css"):
+    def __init__(self):
         self.settings = Sets()
-        self.html = f.fetchFile("tmpl/" + template)
-        #set inline styles to template        
-        self.style = f.fetchFile("tmpl/" + style)
+        self.html = f.fetchFile("tmpl/" + self.settings._baseTemplate)
+        #set inline styles to template
+        self.style = f.fetchFile("tmpl/" + self.settings._styleCss)
         self.html = self.html.replace("*STYLE*", self.style)
-        
         #set base html settings, title, author etc.
         for key, val in self.settings._htmlBase.items():
             self.html = self.html.replace(key, val)

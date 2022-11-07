@@ -9,6 +9,10 @@ from dataclasses import dataclass #Python 3.7->
 #freeze class to make it immutable
 @dataclass(frozen=True)
 class Sets:
+
+    _baseTemplate = "template.html"
+    _styleCss = "style.css"
+
     _htmlBase = {
         "*LANG*": "en",
         "*TITLE*": "Samu Reinikainen CV",
