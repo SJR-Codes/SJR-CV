@@ -9,6 +9,7 @@ from settings import Sets
 
 class CV:
     def __init__(self):
+        #bring settings to self
         self.settings = Sets()
         self.html = f.fetchFile("tmpl/" + self.settings._baseTemplate)
         #set inline styles to template
