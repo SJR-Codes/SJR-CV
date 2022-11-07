@@ -33,3 +33,11 @@ class SETS:
             {"*YEAR*": "2021", "*COMPANY*": "Stadin Safka", "*JOBTITLE*": "Waste food handler", "*DESC*": "Lorem ipsum sic dolores amet..."},
         ]
     }
+
+    _htmlEducation = {
+        "*TITLE*": "Education",
+        "Content": [
+            {"*YEAR*": "2022", "*SCHOOL*": "Taitotalo", "*COURSE*": "Python basics", "*DESC*": "Lorem ipsum sic dolores amet..."},
+            {"*YEAR*": "2022", "*SCHOOL*": "Harvard", "*COURSE*": "CS50 Python", "*DESC*": "Lorem ipsum sic dolores amet..."},
+        ]
+    }
