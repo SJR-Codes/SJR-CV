@@ -4,7 +4,10 @@
 * misc settings for CV
 * Created by Samu Reinikainen
 """
+from dataclasses import dataclass #Python 3.7->
 
+#freeze class to make it immutable
+@dataclass(frozen=True)
 class SETS:
     _htmlBase = {
         "*LANG*": "en",
