@@ -10,6 +10,7 @@ from dataclasses import dataclass #Python 3.7->
 @dataclass(frozen=True)
 class Sets:
 
+    #define templates
     _baseTemplate = "template.html"
     _styleCss = "style.css"
 
