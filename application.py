@@ -5,8 +5,6 @@
 * Created by Samu Reinikainen
 """
 from flask import Flask
-from settings import Sets
-import funcs as f
 from cv import CV
 
 #initialize flask app
