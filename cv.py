@@ -15,17 +15,8 @@ class CV:
         self.style = f.fetchFile("tmpl/" + style)
         self.html = self.html.replace("*STYLE*", self.style)
         
-    def setBaseHtmlSettings(self, settings: dict) -> None:
-        """
-        Set htmlSettings values to html placeholders.
-        :param html: html source as string
-        :type html: str
-        :param settings: settings as dict
-        :type settings: dict
-        :return: string
-        :rtype: str
-        """
-        for key, val in settings.items():
+        #set basic html values, title, author etc.
+        for key, val in self.settings._htmlBase:
             self.html = self.html.replace(key, val)
         
     def addBody(self, content:str) -> None:

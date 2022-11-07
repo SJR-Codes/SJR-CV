@@ -15,7 +15,6 @@ app = Flask(__name__)
 #initialize CV
 #override defaults: cv = CV(template="*yourtemplate.html*", style="*yourstyle.css*")
 cv = CV()
-cv.setBaseHtmlSettings(Sets._htmlBase)
 
 html = f.fetchFile("tmpl/head.html")
 headHtml = f.setPlaceHolders(html, Sets._htmlHead)
