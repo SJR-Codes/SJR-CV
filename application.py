@@ -5,7 +5,7 @@
 * Created by Samu Reinikainen
 """
 from flask import Flask
-from settings import SETS
+from settings import Sets
 import funcs as f
 from cv import CV
 
@@ -15,17 +15,17 @@ app = Flask(__name__)
 #initialize CV
 #override defaults: cv = CV(template="*yourtemplate.html*", style="*yourstyle.css*")
 cv = CV()
-cv.setBaseHtmlSettings(SETS._htmlBase)
+cv.setBaseHtmlSettings(Sets._htmlBase)
 
 html = f.fetchFile("tmpl/head.html")
-headHtml = f.setPlaceHolders(html, SETS._htmlHead)
+headHtml = f.setPlaceHolders(html, Sets._htmlHead)
 
 html = f.fetchFile("tmpl/about.html")
-aboutHtml = f.setPlaceHolders(html, SETS._htmlAbout)
+aboutHtml = f.setPlaceHolders(html, Sets._htmlAbout)
 
 html = f.fetchFile("tmpl/experience.html")
 block = f.fetchFile("tmpl/block.html")
-experienceHtml = f.loopSetPH(html, block, SETS._htmlExperience)
+experienceHtml = f.loopSetPH(html, block, Sets._htmlExperience)
 
 cv.addBody(headHtml+aboutHtml+experienceHtml)
 

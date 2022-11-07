@@ -8,7 +8,7 @@ from dataclasses import dataclass #Python 3.7->
 
 #freeze class to make it immutable
 @dataclass(frozen=True)
-class SETS:
+class Sets:
     _htmlBase = {
         "*LANG*": "en",
         "*TITLE*": "Samu Reinikainen CV",

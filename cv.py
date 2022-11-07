@@ -5,9 +5,11 @@
 * Created by Samu Reinikainen
 """
 import funcs as f
+from settings import Sets
 
 class CV:
     def __init__(self, template = "template.html", style="style.css"):
+        self.settings = Sets()
         self.html = f.fetchFile("tmpl/" + template)
         #set inline styles to template        
         self.style = f.fetchFile("tmpl/" + style)
