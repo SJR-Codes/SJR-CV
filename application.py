@@ -15,17 +15,11 @@ app = Flask(__name__)
 #initialize CV
 cv = CV()
 
-html = f.fetchFile("tmpl/head.html")
-headHtml = f.setPlaceHolders(html, Sets._htmlHead)
+cv.addBlock("tmpl/head.html", "_htmlHead")
+cv.addBlock("tmpl/about.html", "_htmlAbout")
+cv.addMultiBlock("tmpl/block.html", "tmpl/experience.html", "_htmlExperience")
 
-html = f.fetchFile("tmpl/about.html")
-aboutHtml = f.setPlaceHolders(html, Sets._htmlAbout)
-
-html = f.fetchFile("tmpl/experience.html")
-block = f.fetchFile("tmpl/block.html")
-experienceHtml = f.loopSetPH(html, block, Sets._htmlExperience)
-
-cv.addBody(headHtml+aboutHtml+experienceHtml)
+cv.addBody()
 
 #respond all queries with CV page
 @app.route("/")

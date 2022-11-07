@@ -53,22 +53,3 @@ def setPlaceHolders(html: str, settings: dict) -> str:
             html = html.replace(key, pic)
 
     return html
-
-def loopSetPH(html: str, block: str, settings: dict) -> str:
-    """
-    Replace html template placeholders with values from settings.
-    :param filen: template with placeholders
-    :type html: str
-    :return: html
-    :rtype: str
-    """
-    
-    content = ""
-
-    for para in settings.get("Content"):
-        content += setPlaceHolders(html, para)
-    
-    block = block.replace("*TITLE*", settings.get("*TITLE*"))
-    block = block.replace("*CONTENT*", content)
-
-    return block

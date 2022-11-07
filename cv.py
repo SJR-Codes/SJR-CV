@@ -19,15 +19,31 @@ class CV:
         #set base html settings, title, author etc.
         for key, val in self.settings._htmlBase.items():
             self.html = self.html.replace(key, val)
+        self.content = ""
+    
+    def addBlock(self, template, data):
+        #html = f.fetchFile(template)
+        self.content += f.setPlaceHolders(f.fetchFile(template), getattr(Sets, data))
+
+    def addMultiBlock(self, outertmpl, innertmpl, data):
+        tmp = ""
+
+        innerhtml = f.fetchFile(innertmpl)
+        for para in getattr(Sets, data).get("Content"):
+            tmp += f.setPlaceHolders(innerhtml, para)
         
-    def addBody(self, content:str) -> None:
+        block = f.fetchFile(outertmpl)
+        block = block.replace("*TITLE*", getattr(Sets, data).get("*TITLE*"))
+        block = block.replace("*CONTENT*", tmp)
+
+        self.content += block
+
+    def addBody(self) -> None:
         """
         Insert content to html body.
-        :param content: html content
-        :type content: str
         :return: None
         """
-        self.html = self.html.replace("*BODY*", content)
+        self.html = self.html.replace("*BODY*", self.content)
 
     #define what class instance prints when print() or str()
     def __str__(self):
