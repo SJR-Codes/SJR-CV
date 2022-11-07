@@ -21,11 +21,22 @@ class CV:
             self.html = self.html.replace(key, val)
         self.content = ""
     
-    def addBlock(self, template, data):
-        #html = f.fetchFile(template)
+    def addBlock(self, template:str, data:str) -> None:
+        """
+        Populate self.content with html block.
+        :template:str = filename of template
+        :data:str = variable name in settings class
+        :return: None
+        """
         self.content += f.setPlaceHolders(f.fetchFile(template), getattr(Sets, data))
 
-    def addMultiBlock(self, outertmpl, innertmpl, data):
+    def addMultiBlock(self, outertmpl:str, innertmpl:str, data:str) -> None:
+        """
+        Populate self.content with html block.
+        :(inner/outer)template:str = filename of template
+        :data:str = variable name in settings class
+        :return: None
+        """
         tmp = ""
 
         innerhtml = f.fetchFile(innertmpl)
