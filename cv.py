@@ -15,8 +15,8 @@ class CV:
         self.style = f.fetchFile("tmpl/" + style)
         self.html = self.html.replace("*STYLE*", self.style)
         
-        #set basic html values, title, author etc.
-        for key, val in self.settings._htmlBase:
+        #set base html settings, title, author etc.
+        for key, val in self.settings._htmlBase.items():
             self.html = self.html.replace(key, val)
         
     def addBody(self, content:str) -> None:
