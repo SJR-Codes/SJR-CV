@@ -31,6 +31,7 @@ def fetchPic(filen: str) -> str:
     try:
         with open(filen, 'rb') as bf:
             bfdata = bf.read()
+            #base64 encode image to use it inline
             return b64.b64encode(bfdata).decode('utf-8')
     except FileNotFoundError:
         exit(f"Error: script {filen} not found")
