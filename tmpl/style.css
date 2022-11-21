@@ -28,6 +28,10 @@ a { color: #6226d1; }
     border-radius: 0em 0em 1.5em 1.5em;
     height: 4em;
 }
+.cv-foot a {
+    color: antiquewhite;
+    text-decoration: none;
+}
 
 .cv-head-text { float: left; }
 .cv-head img { float: right; }
