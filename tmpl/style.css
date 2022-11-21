@@ -11,22 +11,22 @@ h1 { font-size: 2.5em; }
 h2 { font-size: 2em; }
 /*h1, h2, strong { color: #14121a; }*/
 a { color: #6226d1; }
+.center { text-align: center; }
 
-.cv-head {
-    border-top-left-radius: 5em;
-    border-top-right-radius: 5em;
-    height: 18em;
+
+.cv-head, .cv-foot {
     background-color: #39383b;
     color: antiquewhite;
     padding: 1em;
 }
+
+.cv-head {
+    border-radius: 5em 5em 0em 0em;
+    height: 18em;
+}
 .cv-foot {
-    border-bottom-left-radius: 1.5em;
-    border-bottom-right-radius: 1.5em;
+    border-radius: 0em 0em 1.5em 1.5em;
     height: 4em;
-    background-color: #39383b;
-    color: antiquewhite;
-    padding: 1em;
 }
 
 .cv-head-text { float: left; }
