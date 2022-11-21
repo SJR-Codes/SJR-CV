@@ -4,12 +4,13 @@ color: #24202e;
 margin: 0 auto;
 max-width: 50em;
 font-family: "Helvetica", "Arial", sans-serif;
+font-size: calc(15px + 0.390625vw); /* responsive font size */
 line-height: 1.5;
 padding: 1em 1em;
 }
-h1 { font-size: 2.5em; }
-h2 { font-size: 2em; }
-h3 { font-size: 1.5em; }
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
 
 a { color: #6226d1; }
 .center { text-align: center; }
