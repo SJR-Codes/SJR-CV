@@ -12,16 +12,24 @@ h2 { font-size: 2em; }
 /*h1, h2, strong { color: #14121a; }*/
 a { color: #6226d1; }
 
-.cv-head, .cv-foot {
+.cv-head {
+    border-top-left-radius: 5em;
+    border-top-right-radius: 5em;
     height: 18em;
     background-color: #39383b;
     color: antiquewhite;
     padding: 1em;
-  }
+}
+.cv-foot {
+    border-bottom-left-radius: 1.5em;
+    border-bottom-right-radius: 1.5em;
+    height: 4em;
+    background-color: #39383b;
+    color: antiquewhite;
+    padding: 1em;
+}
 
-.cv-head-text {
-    float: left;
- }
+.cv-head-text { float: left; }
 .cv-head img { float: right; }
 
 .cv-about { clear: both; }
