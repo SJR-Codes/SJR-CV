@@ -24,7 +24,7 @@ cv.addBody()
 
 #respond all queries with CV page
 @app.route("/")
-def hello():
+def render():
     return str(cv)
 
 
