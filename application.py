@@ -18,6 +18,7 @@ cv.addBlock("tmpl/head.html", "_htmlHead")
 cv.addBlock("tmpl/about.html", "_htmlAbout")
 cv.addMultiBlock("tmpl/block.html", "tmpl/experience.html", "_htmlExperience")
 cv.addMultiBlock("tmpl/block.html", "tmpl/education.html", "_htmlEducation")
+cv.addBlock("tmpl/foot.html", "_htmlFoot")
 
 #putting it all together
 cv.addBody()

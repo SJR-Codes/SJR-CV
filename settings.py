@@ -49,3 +49,7 @@ class Sets:
             {"*YEAR*": "2022", "*SCHOOL*": "Harvard", "*COURSE*": "CS50 Python", "*DESC*": "Lorem ipsum sic dolores amet..."},
         ]
     }
+
+    _htmlFoot = {
+        "*EMAIL*": "samu.reinikainen@gmail.com",
+    }
