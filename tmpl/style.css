@@ -1,3 +1,4 @@
+* { box-sizing: border-box; }
 body {
 color: #24202e;
 margin: 0 auto;
@@ -10,3 +11,10 @@ h1 { font-size: 2.5em; }
 h2 { font-size: 2em; }
 h1, h2, strong { color: #14121a; }
 a { color: #6226d1; }
+
+.cv-head-text {
+    float: left;
+ }
+.cv-head img { float: right; }
+
+.cv-about { clear: both; }
