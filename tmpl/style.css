@@ -9,24 +9,31 @@ padding: 1em 1em;
 }
 h1 { font-size: 2.5em; }
 h2 { font-size: 2em; }
-/*h1, h2, strong { color: #14121a; }*/
+h3 { font-size: 1.5em; }
+
 a { color: #6226d1; }
 .center { text-align: center; }
 
 
 .cv-head, .cv-foot {
-    background-color: #39383b;
     color: antiquewhite;
     padding: 1em;
 }
 
 .cv-head {
+    background-image: linear-gradient(to bottom, #39383b, #848386);
     border-radius: 5em 5em 0em 0em;
     height: 18em;
 }
 .cv-foot {
+    background-image: linear-gradient(to bottom,#848386, #39383b);
     border-radius: 0em 0em 1.5em 1.5em;
     height: 4em;
+    vertical-align: middle;
+}
+.cv-foot p {
+    margin: 0;
+    padding: 0;
 }
 .cv-foot a {
     color: antiquewhite;
