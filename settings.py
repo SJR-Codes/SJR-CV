@@ -16,13 +16,13 @@ class Sets:
 
     _htmlBase = {
         "*LANG*": "en",
-        "*TITLE*": "Samu Reinikainen CV",
+        "*TITLE*": "Curriculum Vitae | Samu Reinikainen",
         "*DESC*": "Tiny CV app made with Python and served with Flask",
         "*AUTH*": "samu.reinikainen@gmail.com"
     }
 
     _htmlHead = {
-        "*TITLE*": "Samu Reinikainen CV",
+        "*TITLE*": "Samu Reinikainen",
         "*SUBTITLE*": "Python Developer (Student)",
         "*LOCATION*": "Helsinki, Finland",
         "*DATE*": "20.10.2022",
