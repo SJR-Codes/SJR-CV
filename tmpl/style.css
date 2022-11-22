@@ -10,7 +10,7 @@ body {
     padding: 1em 1em;
 }
 h1 { font-size: 2.5rem; }
-h2 { font-size: 2rem; }
+h2 { font-size: 2rem; margin-top: 0}
 h3 { font-size: 1.5rem; }
 
 a { color: #6226d1; }
