@@ -16,7 +16,6 @@ h3 { font-size: 1.5rem; }
 a { color: #6226d1; }
 .center { text-align: center; }
 
-
 .cv-head, .cv-foot {
     color: antiquewhite;
     padding: 1em;
@@ -50,6 +49,10 @@ a { color: #6226d1; }
     color: antiquewhite;
     text-decoration: none;
 }
+.cv-foot a:hover { color: #24202e; font-weight: bold;}
+
+.cv-foot .tiny {font-size: calc(6px + 0.390625vw);}
+.cv-foot .tiny a { text-decoration: underline;}
 
 .cv-head-text { float: left; margin-left: 2em; }
 .cv-head img { float: right; padding-right: 1em;}
