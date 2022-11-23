@@ -49,7 +49,7 @@ class Sets:
                 "*YEAR*": "2022", 
                 "*SCHOOL*": "Taitotalo", 
                 "*COURSE*": "Python basics", 
-                "*DESC*": "Lorem ipsum sic dolores amet...",
+                "*DESC*": "7 months scratching the surface of todays ICT required skills: Python, Linux, Cloud, Data Analytics...",
                 "*LINK*": "https://github.com/SJR-Codes/SJR-CV",
                 "*TITLE*": "Final Project on GitHub"
             },
@@ -57,9 +57,17 @@ class Sets:
                 "*YEAR*": "2022", 
                 "*SCHOOL*": "Harvard", 
                 "*COURSE*": "CS50 Python", 
-                "*DESC*": "Lorem ipsum sic dolores amet...",
+                "*DESC*": "2 weeks speed run to prepare for next course.",
                 "*LINK*": "https://github.com/SJR-Codes/CS50_codes/tree/main/final",
                 "*TITLE*": "Final Project on GitHub"
+            },
+            {
+                "*YEAR*": "2018", 
+                "*SCHOOL*": "Opiframe", 
+                "*COURSE*": "Internet of Things Developer", 
+                "*DESC*": "6 months of getting acquainted with all things internet.",
+                "*LINK*": "",
+                "*TITLE*": ""
             },
         ]
     }
