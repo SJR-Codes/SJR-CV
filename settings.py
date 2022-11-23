@@ -45,8 +45,22 @@ class Sets:
     _htmlEducation = {
         "*TITLE*": "Education",
         "Content": [
-            {"*YEAR*": "2022", "*SCHOOL*": "Taitotalo", "*COURSE*": "Python basics", "*DESC*": "Lorem ipsum sic dolores amet..."},
-            {"*YEAR*": "2022", "*SCHOOL*": "Harvard", "*COURSE*": "CS50 Python", "*DESC*": "Lorem ipsum sic dolores amet..."},
+            {
+                "*YEAR*": "2022", 
+                "*SCHOOL*": "Taitotalo", 
+                "*COURSE*": "Python basics", 
+                "*DESC*": "Lorem ipsum sic dolores amet...",
+                "*LINK*": "https://github.com/SJR-Codes/SJR-CV",
+                "*TITLE*": "Final Project on GitHub"
+            },
+            {
+                "*YEAR*": "2022", 
+                "*SCHOOL*": "Harvard", 
+                "*COURSE*": "CS50 Python", 
+                "*DESC*": "Lorem ipsum sic dolores amet...",
+                "*LINK*": "https://github.com/SJR-Codes/CS50_codes/tree/main/final",
+                "*TITLE*": "Final Project on GitHub"
+            },
         ]
     }
 
