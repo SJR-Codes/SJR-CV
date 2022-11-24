@@ -41,7 +41,7 @@ class Sets:
                 "*YEAR*": "2023", 
                 "*COMPANY*": "contact to get your company here", 
                 "*JOBTITLE*": "Python Developer (apprentice)", 
-                "*DESC*": "Only good companies accepted in here. No unethical evil doers. Well, except if the pay is really good..."
+                "*DESC*": "Only good companies accepted. No unethical evil doers. Well, except if the pay is really good..."
             },
             {
                 "*YEAR*": "2021", 
