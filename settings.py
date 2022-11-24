@@ -25,7 +25,7 @@ class Sets:
         "*TITLE*": "Samu Reinikainen",
         "*SUBTITLE*": "Python Developer (Student)",
         "*LOCATION*": "Helsinki, Finland",
-        "*DATE*": "20.10.2022",
+        "*DATE*": "24.11.2022",
         "*PIC*": "img/naama.png"
     }
 
@@ -37,8 +37,18 @@ class Sets:
     _htmlExperience = {
         "*TITLE*": "Experience",
         "Content": [
-            {"*YEAR*": "2022", "*COMPANY*": "not yet", "*JOBTITLE*": "Developer", "*DESC*": "Lorem ipsum sic dolores amet..."},
-            {"*YEAR*": "2021", "*COMPANY*": "Stadin Safka", "*JOBTITLE*": "Waste food handler", "*DESC*": "Lorem ipsum sic dolores amet..."},
+            {
+                "*YEAR*": "2022", 
+                "*COMPANY*": "not yet", 
+                "*JOBTITLE*": "Developer", 
+                "*DESC*": "Lorem ipsum sic dolores amet..."
+            },
+            {
+                "*YEAR*": "2021", 
+                "*COMPANY*": "Stadin Safka", 
+                "*JOBTITLE*": "Waste food handler", 
+                "*DESC*": "Lorem ipsum sic dolores amet..."
+            },
         ]
     }
 
@@ -56,7 +66,7 @@ class Sets:
             {
                 "*YEAR*": "2022", 
                 "*SCHOOL*": "Harvard", 
-                "*COURSE*": "CS50 Python", 
+                "*COURSE*": "CS50 Introduction to Programming with Python", 
                 "*DESC*": "2 weeks speed run to prepare for next course.",
                 "*LINK*": "https://github.com/SJR-Codes/CS50_codes/tree/main/final",
                 "*TITLE*": "Final Project on GitHub"
