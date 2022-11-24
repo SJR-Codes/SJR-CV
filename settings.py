@@ -38,16 +38,58 @@ class Sets:
         "*TITLE*": "Experience",
         "Content": [
             {
-                "*YEAR*": "2023", 
+                "*YEAR*": "2023-", 
                 "*COMPANY*": "contact to get your company here", 
                 "*JOBTITLE*": "Python Developer (apprentice)", 
                 "*DESC*": "Only good companies accepted. No unethical evil doers. Well, except if the pay is really good..."
             },
             {
-                "*YEAR*": "2021", 
+                "*YEAR*": "2021-2022", 
                 "*COMPANY*": "Stadin Safka", 
                 "*JOBTITLE*": "Waste food handler", 
                 "*DESC*": "Saving the world and getting good physical exercise."
+            },
+            {
+                "*YEAR*": "2016-2017", 
+                "*COMPANY*": "Kymppi Service Oy", 
+                "*JOBTITLE*": "Warehouse worker", 
+                "*DESC*": "Forklift driver & Excel/VB wizard."
+            },
+            {
+                "*YEAR*": "2013-2015", 
+                "*COMPANY*": "Eezy Osk", 
+                "*JOBTITLE*": "Freelancer", 
+                "*DESC*": "Backend stuff, Drupal modules, Web coding."
+            },
+            {
+                "*YEAR*": "2009-2013", 
+                "*COMPANY*": "Ajassa Ky", 
+                "*JOBTITLE*": "Entrepreneur", 
+                "*DESC*": "PHP coding, server administration, build, sell & support workstations."
+            },
+            {
+                "*YEAR*": "2008-2009", 
+                "*COMPANY*": "Pro-Equal Oy", 
+                "*JOBTITLE*": "Partner", 
+                "*DESC*": "Server administration, build, sell & support workstations."
+            },
+            {
+                "*YEAR*": "2006-2008", 
+                "*COMPANY*": "Carrot Oy", 
+                "*JOBTITLE*": "Developer", 
+                "*DESC*": "HR software development. PHP, MySQL"
+            },
+            {
+                "*YEAR*": "2004-2006", 
+                "*COMPANY*": "Volatile Software", 
+                "*JOBTITLE*": "Entrepreneur", 
+                "*DESC*": "Software development. PHP, MySQL"
+            },
+            {
+                "*YEAR*": "2000-2004", 
+                "*COMPANY*": "Bitblit Oy", 
+                "*JOBTITLE*": "Programmer", 
+                "*DESC*": "Web software development. MS Access, Visual Basic, PHP, PostgreSQL"
             },
         ]
     }
