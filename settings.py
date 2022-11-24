@@ -46,7 +46,7 @@ class Sets:
         "*TITLE*": "Education",
         "Content": [
             {
-                "*YEAR*": "2022", 
+                "*YEAR*": "2023", 
                 "*SCHOOL*": "Taitotalo", 
                 "*COURSE*": "Python basics", 
                 "*DESC*": "7 months scratching the surface of todays ICT required skills: Python, Linux, Cloud, Data Analytics...",
