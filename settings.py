@@ -69,6 +69,14 @@ class Sets:
                 "*LINK*": "",
                 "*TITLE*": ""
             },
+            {
+                "*YEAR*": "2000", 
+                "*SCHOOL*": "Juva Vocational School", 
+                "*COURSE*": "Vocational Qualification in Information Technology", 
+                "*DESC*": "3 years of learning IT: Windows NT, ISDN etc. ancient history.",
+                "*LINK*": "",
+                "*TITLE*": ""
+            },
         ]
     }
 
