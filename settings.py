@@ -47,7 +47,7 @@ class Sets:
                 "*YEAR*": "2021", 
                 "*COMPANY*": "Stadin Safka", 
                 "*JOBTITLE*": "Waste food handler", 
-                "*DESC*": "Saving the world and good physical exercise."
+                "*DESC*": "Saving the world and getting good physical exercise."
             },
         ]
     }
