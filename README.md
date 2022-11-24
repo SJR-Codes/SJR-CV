@@ -12,7 +12,7 @@ Modify provided settings.py to your own texts and run application.py.
 ### Files
 * **application.py**:
     * main code file
-    * provides all code
+    * initializes & populates CV and serves it with Flask
 * **settings.py**:
     * settings and contents for CV
     * interpreter creates CV based on this file
