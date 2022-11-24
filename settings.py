@@ -37,8 +37,18 @@ class Sets:
     _htmlExperience = {
         "*TITLE*": "Experience",
         "Content": [
-            {"*YEAR*": "2022", "*COMPANY*": "not yet", "*JOBTITLE*": "Developer", "*DESC*": "Lorem ipsum sic dolores amet..."},
-            {"*YEAR*": "2021", "*COMPANY*": "Stadin Safka", "*JOBTITLE*": "Waste food handler", "*DESC*": "Lorem ipsum sic dolores amet..."},
+            {
+                "*YEAR*": "2022", 
+                "*COMPANY*": "not yet", 
+                "*JOBTITLE*": "Developer", 
+                "*DESC*": "Lorem ipsum sic dolores amet..."
+            },
+            {
+                "*YEAR*": "2021", 
+                "*COMPANY*": "Stadin Safka", 
+                "*JOBTITLE*": "Waste food handler", 
+                "*DESC*": "Lorem ipsum sic dolores amet..."
+            },
         ]
     }
 
