@@ -56,7 +56,7 @@ class Sets:
             {
                 "*YEAR*": "2022", 
                 "*SCHOOL*": "Harvard", 
-                "*COURSE*": "CS50 Python", 
+                "*COURSE*": "CS50 Introduction to Programming with Python", 
                 "*DESC*": "2 weeks speed run to prepare for next course.",
                 "*LINK*": "https://github.com/SJR-Codes/CS50_codes/tree/main/final",
                 "*TITLE*": "Final Project on GitHub"
