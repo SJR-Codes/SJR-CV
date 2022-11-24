@@ -12,7 +12,7 @@ Modify provided settings.py to your own texts and run application.py.
 ### Files
 * **application.py**:
     * main code file
-    * initializes & populates CV and serves it with Flask
+    * provides all code
 * **settings.py**:
     * settings and contents for CV
     * interpreter creates CV based on this file
@@ -31,7 +31,7 @@ Modify provided settings.py to your own texts and run application.py.
 
 ### Dependencies
 
-* SJR-CV depends following external libraries:
+* Final Project Representer depends following external libraries:
     * Flask    ```(pip install flask)```
 * and following internal libraries:
     * base64

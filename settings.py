@@ -38,16 +38,16 @@ class Sets:
         "*TITLE*": "Experience",
         "Content": [
             {
-                "*YEAR*": "2022", 
-                "*COMPANY*": "not yet", 
-                "*JOBTITLE*": "Developer", 
-                "*DESC*": "Lorem ipsum sic dolores amet..."
+                "*YEAR*": "2023", 
+                "*COMPANY*": "contact to get your company here", 
+                "*JOBTITLE*": "Python Developer (apprentice)", 
+                "*DESC*": "Only good companies accepted. No unethical evil doers. Well, except if the pay is really good..."
             },
             {
                 "*YEAR*": "2021", 
                 "*COMPANY*": "Stadin Safka", 
                 "*JOBTITLE*": "Waste food handler", 
-                "*DESC*": "Lorem ipsum sic dolores amet..."
+                "*DESC*": "Saving the world and getting good physical exercise."
             },
         ]
     }
