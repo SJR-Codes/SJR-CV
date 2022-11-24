@@ -25,7 +25,7 @@ class Sets:
         "*TITLE*": "Samu Reinikainen",
         "*SUBTITLE*": "Python Developer (Student)",
         "*LOCATION*": "Helsinki, Finland",
-        "*DATE*": "20.10.2022",
+        "*DATE*": "24.11.2022",
         "*PIC*": "img/naama.png"
     }
 
