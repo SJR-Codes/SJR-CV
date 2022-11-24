@@ -31,7 +31,7 @@ Modify provided settings.py to your own texts and run application.py.
 
 ### Dependencies
 
-* Final Project Representer depends following external libraries:
+* SJR-CV depends following external libraries:
     * Flask    ```(pip install flask)```
 * and following internal libraries:
     * base64
