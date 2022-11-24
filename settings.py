@@ -46,7 +46,7 @@ class Sets:
         "*TITLE*": "Education",
         "Content": [
             {
-                "*YEAR*": "2022", 
+                "*YEAR*": "2023", 
                 "*SCHOOL*": "Taitotalo", 
                 "*COURSE*": "Python basics", 
                 "*DESC*": "7 months scratching the surface of todays ICT required skills: Python, Linux, Cloud, Data Analytics...",
@@ -66,6 +66,14 @@ class Sets:
                 "*SCHOOL*": "Opiframe", 
                 "*COURSE*": "Internet of Things Developer", 
                 "*DESC*": "6 months of getting acquainted with all things internet.",
+                "*LINK*": "",
+                "*TITLE*": ""
+            },
+            {
+                "*YEAR*": "2000", 
+                "*SCHOOL*": "Juva Vocational School", 
+                "*COURSE*": "Vocational Qualification in Information Technology", 
+                "*DESC*": "3 years of learning IT: Windows NT, ISDN etc. ancient history.",
                 "*LINK*": "",
                 "*TITLE*": ""
             },
