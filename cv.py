@@ -6,11 +6,33 @@
 """
 import funcs as f
 from settings import Sets
+from settings_fi import Sets_fi
+
+
+def renderCV(lang):
+    #initialize CV
+    cv = CV(lang)
+    
+    #add html blocks
+    cv.addBlock("tmpl/head.html", "_htmlHead")
+    cv.addBlock("tmpl/about.html", "_htmlAbout")
+    cv.addMultiBlock("tmpl/block.html", "tmpl/experience.html", "_htmlExperience")
+    cv.addMultiBlock("tmpl/block.html", "tmpl/education.html", "_htmlEducation")
+    cv.addBlock("tmpl/foot.html", "_htmlFoot")
+
+    #putting it all together
+    cv.addBody()
+
+    return cv
 
 class CV:
-    def __init__(self):
+    def __init__(self, lang):
         #bring settings to self
-        self.settings = Sets()
+        if lang == "en":
+            self.settings = Sets()
+        elif lang == "fi":
+            self.settings = Sets_fi()
+        
         #fetch html template
         self.html = f.fetchFile("tmpl/" + self.settings._baseTemplate)
         #set inline styles to template
@@ -20,7 +42,7 @@ class CV:
         for key, val in self.settings._htmlBase.items():
             self.html = self.html.replace(key, val)
         self.content = ""
-    
+   
     def addBlock(self, template:str, data:str) -> None:
         """
         Populate self.content with html block.
@@ -28,8 +50,8 @@ class CV:
         :data:str = variable name in settings class
         :return: None
         """
-        self.content += f.setPlaceHolders(f.fetchFile(template), getattr(Sets, data))
-
+        self.content += f.setPlaceHolders(f.fetchFile(template), getattr(self.settings, data))
+        
     def addMultiBlock(self, outertmpl:str, innertmpl:str, data:str) -> None:
         """
         Populate self.content with html block.
@@ -40,11 +62,11 @@ class CV:
         tmp = ""
 
         innerhtml = f.fetchFile(innertmpl)
-        for para in getattr(Sets, data).get("Content"):
+        for para in getattr(self.settings, data).get("Content"):
             tmp += f.setPlaceHolders(innerhtml, para)
         
         block = f.fetchFile(outertmpl)
-        block = block.replace("*TITLE*", getattr(Sets, data).get("*TITLE*"))
+        block = block.replace("*TITLE*", getattr(self.settings, data).get("*TITLE*"))
         block = block.replace("*CONTENT*", tmp)
 
         self.content += block

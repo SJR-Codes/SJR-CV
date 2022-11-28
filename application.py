@@ -5,29 +5,21 @@
 * Created by Samu Reinikainen
 """
 from flask import Flask
-from cv import CV
+import cv
 
 #initialize flask app
 app = Flask(__name__)
 
-#initialize CV
-cv = CV()
-
-#add html blocks
-cv.addBlock("tmpl/head.html", "_htmlHead")
-cv.addBlock("tmpl/about.html", "_htmlAbout")
-cv.addMultiBlock("tmpl/block.html", "tmpl/experience.html", "_htmlExperience")
-cv.addMultiBlock("tmpl/block.html", "tmpl/education.html", "_htmlEducation")
-cv.addBlock("tmpl/foot.html", "_htmlFoot")
-
-#putting it all together
-cv.addBody()
-
-#respond all queries with CV page
+#respond all queries with english CV page
 @app.route("/")
-def render():
-    return str(cv)
-
+def index():
+    cvHtml = cv.renderCV("en")
+    return str(cvHtml)
+#respond with finnish CV page
+@app.route("/fi")
+def index_fi():
+    cvHtml = cv.renderCV("fi")
+    return str(cvHtml)
 
 # run blocks of code only if our program is the main program executed
 if __name__ == "__main__":
