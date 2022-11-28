@@ -20,6 +20,11 @@ def index():
 def index_fi():
     cvHtml = cv.renderCV("fi")
     return str(cvHtml)
+#respond to ping
+@app.route("/ping")
+def ping():
+    return "ping, everything ok!"
+
 
 # run blocks of code only if our program is the main program executed
 if __name__ == "__main__":
