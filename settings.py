@@ -13,6 +13,7 @@ class Sets:
     #define templates
     _baseTemplate = "template.html"
     _styleCss = "style.css"
+    _lang = "en"
 
     _htmlBase = {
         "*LANG*": "en",
@@ -75,7 +76,7 @@ class Sets:
             },
             {
                 "*YEAR*": "2006-2008", 
-                "*COMPANY*": "Carrot Oy", 
+                "*COMPANY*": "Personel Henkilöstöpalvelut Oy", 
                 "*JOBTITLE*": "Developer", 
                 "*DESC*": "HR software development. PHP, MySQL"
             },
